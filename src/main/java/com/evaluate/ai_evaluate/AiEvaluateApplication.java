@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableTransactionManagement
-@MapperScan(basePackages = "com.evaluate.ai_evaluate.dao")
+@MapperScan(basePackages = "com.evaluate.ai_evaluate.mapper")
 @EnableAsync
 @SpringBootApplication
 

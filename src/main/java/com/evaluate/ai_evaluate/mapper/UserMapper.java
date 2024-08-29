@@ -1,4 +1,4 @@
-package com.evaluate.ai_evaluate.dao;
+package com.evaluate.ai_evaluate.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.evaluate.ai_evaluate.entity.User;
