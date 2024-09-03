@@ -29,11 +29,12 @@ public class AIServiceImpl implements AIService {
     @Override
     @SneakyThrows
     public String[] getEvaluation(PicDTO picDTO) {
-        String text = "";
+        String text = "假如你是顾客,";
         String evType = textTemplateMapper.getByKeyEV(picDTO.getTemplateKey());
         text += picDTO.getFontNumberMin() + "-" + picDTO.getFontNumberMax() + "字,";
         text += evType + ",";
         text += picDTO.getRemark();
+        text += "评价";
         BigModelNew bigModelNew = new BigModelNew();
         return bigModelNew.getEvaluation(picDTO.getPics(),text);
     }
